@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.register-container {
+  width: 100%;
+  max-width: 700px;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-family: 'Lalezar', cursive;
+  font-size: 64px;
+  color: #0083ff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: stretch; /* padrão para pegar toda a largura */
+}
+
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.remember-me {
+  display: block;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 14px; /* alinhamento à esquerda */
+  /* opcional: para garantir que ocupe toda a largura do formulário */
+  width: 100%;
+}
+
+.remember-me input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+}
+
+.btn-submit {
+  background-color: #0083ff;
+  color: white;
+  font-family: 'Lalezar', cursive;
+  font-size: 24px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+  align-self: center;
+  display: inline-block;
+}
+
+.btn-submit:hover {
+  background-color: #006ed6;
+}
+
+.login-footer-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  font-weight: bold;
+  color: #0021ca;
+  font-size: 14px;
+}
+
+.login-footer-links a {
+  color: inherit;
+  text-decoration: underline;
+}
