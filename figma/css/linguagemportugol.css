@@ -1,15 +1,26 @@
 /* Reset e fonte */
-html, body {
+html,
+body {
+  font-family: 'Inter', sans-serif;
+  height: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Container principal */
 .container {
-  width: 100%;
-  max-width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
+
+
+.content-section {
+  flex: 1;
+}
+
 
 /* Cabeçalho */
 .site-header {
@@ -57,7 +68,8 @@ html, body {
 }
 
 .hero-image {
-  flex: 0 0 125px; /* largura fixa para a imagem */
+  flex: 0 0 125px;
+  /* largura fixa para a imagem */
   padding: 15px;
   align-content: ce;
 }
@@ -116,16 +128,11 @@ html, body {
   margin: 20px 0;
   padding: 15px;
   gap: 15px;
-  /* Remover flex-wrap para evitar quebra */
-  flex-wrap: nowrap; /* ou remova essa linha */
-  box-shadow: 0 2px 5px rgba(32, 31, 31, 0.1);
-  /* Para evitar que o texto force a largura maior que o container */
-  max-width: 100%;
+  flex-wrap: wrap;
 }
 
 .info-card img {
-  max-width: 150px;
-  max-height: 200px;
+  max-width: 200px;
   border-radius: 10px;
   flex: 0 0 125px;
   /* largura fixa para a imagem */
@@ -133,14 +140,6 @@ html, body {
 
 .info-text h2 {
   margin-top: 0;
-  /* Remova display:flex aqui, que pode causar problemas */
-  display: block;
-}
-
-.info-text {
-  /* Faz o texto ocupar o espaço restante */
-  flex: 1 1 auto;
-  min-width: 0; /* importante para permitir quebra de texto */
 }
 
 .learn-more-btn {
@@ -158,4 +157,15 @@ html, body {
   padding: 20px 0;
   color: #ffffff;
   background-color: #475673;
+}
+
+.Voltar {
+  align-items: start;
+  margin-left: 10px;
+  background-color: #1D68BF;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  width: 45px;
 }
